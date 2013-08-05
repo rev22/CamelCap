@@ -1,5 +1,4 @@
-
-copyrightLine = "Copyright (c) 2013 Michele Bini <michele.bini@gmail.com>"
+copyright = "Copyright (c) 2013 Michele Bini <michele.bini@gmail.com>"
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the version 3 of the GNU General Public License
@@ -116,6 +115,6 @@ htmlcup.html5Page ->
         @p -> @small "Animation showing the difference:"
         @img alt:"Appreciate the difference", src:"CamelCapAnimation.gif"
       @footer ->
-        @span copyrightLine.replace(/copyright( \(c\))?/i, "ⓒ")
+        @span copyright.replace(/copyright( \(c\))?/i, "ⓒ")
         do midDot
         @a href:"http://github.com/rev22/CamelCap/tree/gh-pages", "Source code"
