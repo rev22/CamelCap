@@ -116,6 +116,6 @@ htmlcup.html5Page ->
         @p -> @small "Animation showing the difference:"
         @img alt:"Appreciate the difference", src:"CamelCapAnimation.gif"
       @footer ->
-        @span copyrightLine
+        @span copyrightLine.replace(/copyright( \(c\))?/i, "ⓒ")
         do midDot
         @a href:"http://github.com/rev22/CamelCap/tree/gh-pages", "Source code"
