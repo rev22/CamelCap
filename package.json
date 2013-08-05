@@ -1,0 +1,19 @@
+{
+    "name": "CamelCap",
+    "version": "0.1.0",
+    "author": "Michele Bini <michele.bini@gmail.com>",
+    "homepage": "http://rev22.github.io/CamelCap",
+    "bugs": { "url": "http://github.com/rev22/CamelCap/issues" },
+    "devDependencies": {
+	"coffee-script": ">=1.3.0 <3.0.0",
+	"uglify-js2": ">=2.1.0 <3.0.0"
+    },
+    "engines": {
+	"node": ">=0.6"
+    },
+    "repository": {
+	"type": "git",
+	"url": "http://github.com/rev22/CamelCap.git"
+    },
+    "license": "MIT"
+}
