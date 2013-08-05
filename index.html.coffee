@@ -101,7 +101,7 @@ htmlcup.html5Page ->
           @span " into "
           q c "youCanReadThis"
         @h1 ->
-          @span class:"info", "Install bookmarket: "
+          @span class:"info", "Install bookmarklet: "
           @a class:"bookmarklet", href:bookmarklet, title:"Move this link to your bookmarks bar to install", ->
             h c "CamelCap"
         @p ->
