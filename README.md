@@ -17,8 +17,8 @@ Licensing and authors
 
 Copyright (c) 2013 Michele Bini <michele.bini@gmail.com>
 
-The website source code is Libre Software licensed under the terms of the GNU GPL3, which you can read in the file copying.
+The website source code is Libre Software licensed under the terms of the GNU GPL3, which you can read in the file ```COPYING```.
 
 No warranty implied or explicit is associated with this code.
 
-The bookmarklet additionally is licensed with a permissive MIT-style license, which you can read in MIT-LICENSE
+The bookmarklet additionally is licensed with a permissive MIT-style license, which you can read in the file ```MIT-LICENSE```.
