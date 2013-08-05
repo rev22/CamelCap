@@ -105,7 +105,7 @@ htmlcup.html5Page ->
           @a class:"bookmarklet", href:bookmarklet, title:"Move this link to your bookmarks bar to install", ->
             h c "CamelCap"
         @p ->
-          h "#{c "CamelCap"} is a visual aid for reading #{c "CamelCase"} code in an "; @a href:"http://ace.c9.io", "ACE editor"; h " They are often used for code editing in popular sites, such as #{c "GitHub"} or #{c "Cloud9"}"
+          h "#{c "CamelCap"} is a visual aid for reading #{c "CamelCase"} code in an "; @a href:"http://ace.c9.io", "ACE editor"; h ": they are often used for code editing in popular sites, such as #{c "GitHub"} or #{c "Cloud9"}"
         @p -> h "It works by highlighting uppercase characters in the middle of the #{camelCap "MixedCase"} identifiers."
         @p "To use it, click on the bookmarklet while your browser is visiting a page with an ACE editor.  Initially, scrolling in the editor may be needed for a correct display."
         @p class:"info", ->
