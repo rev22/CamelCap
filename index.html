@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Make CamelCase readable!</title><style type="text/css">body {
+  background:black;
+  font-size: 16px;
+  text-align:center;
+}
+body, footer,div {
+  padding:0;margin:0;border:0;
+}
+body,* {
+  color:#ccf;
+  font-family: 'Crimson Text', Helvetica;
+  /* font-variant: small-caps; */
+}
+b { color: #e7e7ff; }
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+.info {
+  opacity: 0.75
+}
+a.bookmarklet {
+  background:#000710;
+  font-size:120%;
+  display: inline-block;
+  box-shadow: 0 0 5px #aaf;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.flowingContainer {
+  vertical-align: top;
+}
+.flowingContent {
+  max-width:25em;
+  padding: 0.5em;
+  display:inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+.flowingContent.alongside {
+  vertical-align: middle; /* doesn't seem to be honored by browser */
+}
+.flowingContent :not(.flowingContent) {
+  vertical-align: baseline;
+}
+.flowingContent:hover {
+  overflow: auto;
+}
+.halfsize {
+  font-size: 50%;
+}
+footer {
+  width:100%;
+  font-size: 14px;
+  border-top: 1px solid #113;
+  /* box-shadow: -2px 0 1px white; */
+  opacity:0.6;
+}
+footer:hover { opacity:1 }</style><link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet" type="text/css"></head><body><div class="flowingContainer"><div class="flowingContent"><h2><span>Turn </span><span>«</span><span class=halfsize>&nbsp;</span>youCantReadThis<span class=halfsize>&nbsp;</span><span>»</span><span> into </span><span>«</span><span class=halfsize>&nbsp;</span>you<b>C</b>an<b>R</b>ead<b>T</b>his<span class=halfsize>&nbsp;</span><span>»</span></h2><h1><span class="info">Install bookmarket: </span><a class="bookmarklet" href="javascript:(function()%7Bvar%20ace%2Crequire%2C_ref%3Bif(ace%3Dnull!%3D(_ref%3Dwindow.ace)%3F_ref%3Awindow.__ace_shadowed__%2Crequire%3Dnull!%3Dace%3Face.require%3Avoid%200)%7Bif(document.getElementById(%22camelcapcss%22))return%3Brequire(%5B%22ace%2Flayer%2Ftext%22%5D%2Cfunction(_arg)%7Bvar%20Text%2Corig%2Cpatched%2Cx%2C_i%2C_len%2C_ref1%2C_ref2%2C_results%3Bif(Text%3D_arg.Text%2C!document.getElementById(%22camelcapcss%22))%7Bfor(orig%3DText.prototype.%24renderToken%2Cpatched%3Dfunction(rgx)%7Breturn%20function(builder%2Ccol%2Ctoken%2Cvalue)%7Bvar%20match%2Cp%2Cq%2Cs%2Ctype%2Ctype_c%3Bif(match%3Drgx.exec(value))%7Bfor(type%3Dtoken.type%2Ctype_c%3Dtype%2B%22.camel%22%2Cp%3D0%3B%3B)if(q%3Drgx.lastIndex-1%2Cs%3Dvalue.substring(p%2Cq)%2Ccol%3Dorig.call(this%2Cbuilder%2Ccol%2C%7Btype%3Atype%2Cvalue%3As%7D%2Cs)%2Cs%3Dvalue.substring(q%2Cp%3Dq%2B1)%2Ccol%3Dorig.call(this%2Cbuilder%2Ccol%2C%7Btype%3Atype_c%2Cvalue%3As%7D%2Cs)%2C!(match%3Drgx.exec(value)))break%3Breturn%20s%3Dvalue.substring(p)%2Corig.call(this%2Cbuilder%2Ccol%2C%7Btype%3Atype%2Cvalue%3As%7D%2Cs)%7Dreturn%20orig.apply(this%2Carguments)%7D%7D(RegExp(%22%5Ba-z%5D%5B0-9%5D*%5BA-Z%5D%22%2C%22g%22))%2CText.prototype.%24renderToken%3Dpatched%2Cx%3Ddocument.createElement(%22style%22)%2Cx.id%3D%22camelcapcss%22%2Cx.innerHTML%3D%22.ace_camel%20%7B%20font-weight%3A%20bold%3B%20%7D%22%2Cdocument.head.appendChild(x)%2C_ref1%3Ddocument.getElementsByClassName(%22ace_editor%22)%2C_results%3D%5B%5D%2C_i%3D0%2C_len%3D_ref1.length%3B_len%3E_i%3B_i%2B%2B)x%3D_ref1%5B_i%5D%2C(x%3Dnull!%3Dx%3Fnull!%3D(_ref2%3Dx.env)%3F_ref2.editor%3Avoid%200%3Avoid%200)%3F(x%3Dnull!%3Dx%3Fx.renderer%3Avoid%200)%3F(console.log(%22Attempting%20to%20reset%20mode%22)%2C_results.push(x.updateFull()))%3A_results.push(void%200)%3A_results.push(void%200)%3Breturn%20_results%7D%7D)%7D%7D)()" title="Move this link to your bookmarks bar to install">Camel<b>C</b>ap</a></h1><p>Camel<b>C</b>ap is a visual aid for reading Camel<b>C</b>ase code in an <a href="http://ace.c9.io">ACE editor</a> They are often used for code editing in popular sites, such as Git<b>H</b>ub or Cloud9</p><p>It works by highlighting uppercase characters in the middle of the Mixed<b>C</b>ase identifiers.</p><p>To use it, click on the bookmarklet while your browser is visiting a page with an ACE editor.  Initially, scrolling in the editor may be needed for a correct display.</p><p class="info"><span>More information about bookmarklets on </span><a href="http://en.wikipedia.org/wiki/Bookmarklet">Wikipedia</a></p></div><div class="flowingContent alongside"><p><small>Animation showing the difference:</small></p><img alt="Appreciate the difference" src="CamelCapAnimation.gif"></div><footer><span>Copyright (c) 2013 Michele Bini &lt;michele.bini@gmail.com></span> &middot; <a href="http://github.com/rev22/CamelCap/tree/gh-pages">Source code</a></footer></div></body></html>
