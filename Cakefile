@@ -68,6 +68,7 @@ compileBookmarklet = do ->
     writeFileSync to, bookmarklet
     true
 
-task "build", "compile bookmarklet", ->
+task "build", "compile bookmarklet and js", ->
+  compileCoffeeScriptFile "CamelCap.coffee"
   compileBookmarklet("CamelCap.coffee", "CamelCapBookmarklet.txt")
   compileHtmlDotCoffee "index.html.coffee"
